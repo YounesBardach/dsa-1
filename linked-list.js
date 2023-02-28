@@ -1,3 +1,5 @@
+//Linked list:
+
 const linkList = () => {
   const listObject = {};
   listObject.head = null;
@@ -5,6 +7,7 @@ const linkList = () => {
   listObject.node = (value = null, nextNode = null) => {
     return { value, nextNode };
   };
+
   listObject.prepend = (value) => {
     const newFirstNode = listObject.node(value);
     if (!listObject.head) {
@@ -14,6 +17,7 @@ const linkList = () => {
     listObject.head = newFirstNode;
     return newFirstNode;
   };
+
   listObject.append = (value) => {
     let newLastNode = listObject.head;
 
@@ -38,6 +42,7 @@ const linkList = () => {
     }
     return count;
   };
+
   listObject.at = (index) => {
     let nodeIndex = 0;
     let indexer = listObject.head;
@@ -86,6 +91,7 @@ const linkList = () => {
     }
     return false;
   };
+
   listObject.find = (value) => {
     let nodeIndex = 0;
     let indexer = listObject.head;
@@ -101,6 +107,7 @@ const linkList = () => {
     }
     return null;
   };
+
   listObject.toString = () => {
     let NodePrinter = listObject.head;
     let Print = ``;
@@ -118,6 +125,7 @@ const linkList = () => {
     Print += `null`;
     return Print;
   };
+
   listObject.insertAt = (value, index) => {
     if (!listObject.at(index)) {
       return;
@@ -130,6 +138,7 @@ const linkList = () => {
     insertedNode.value = value;
     insertedNode.nextNode = newNextNode;
   };
+
   listObject.removeAt = (index) => {
     if (!listObject.at(index)) {
       return;
@@ -144,6 +153,7 @@ const linkList = () => {
     }
     removedNode = null;
   };
+
   return listObject;
 };
 
