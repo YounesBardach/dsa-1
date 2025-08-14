@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.postimg.cc/C1p8n606/Chat-GPT-Image-Aug-13-2025-09-23-43-PM.png" alt="DSA Practice Banner (Linked List & BST)" width="900" />
+  <img src="https://i.postimg.cc/28nSV8ym/Chat-GPT-Image-Aug-13-2025-09-36-53-PM.png" alt="DSA Practice Banner (Linked List & BST)" width="900" />
 </p>
 
 <div align="center">
